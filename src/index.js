@@ -1,4 +1,5 @@
 import { createHomePage } from "./pages/home";
+import "./style.css";
 
 (function () {
   const root = document.querySelector("#content");

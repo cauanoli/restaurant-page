@@ -15,7 +15,7 @@ export function createHomePage() {
 
 function createMessage(text) {
   const container = document.createElement("div");
-  container.classList = "messages__message";
+  container.classList = "message";
 
   const textContainer = document.createElement("p");
   textContainer.textContent = text;
@@ -31,6 +31,10 @@ function createMessages() {
   const flavors = createMessage("Try different flavors");
   const emotions = createMessage("Live other emotions");
   const people = createMessage("Meet other people");
+
+  flavors.classList.add("bg-blue");
+  emotions.classList.add("bg-pink");
+  people.classList.add("bg-yellow");
 
   [flavors, emotions, people].forEach((message) => {
     container.appendChild(message);
