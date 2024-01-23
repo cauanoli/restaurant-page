@@ -1,0 +1,12 @@
+:root {
+  --color-highlight: #cf2c4f;
+  --color-pink: #ffb7de;
+  --color-blue: #a2daff;
+  --color-white: #eef9ff;
+  --color-yellow: #ffd8a1;
+  --color-text: #1e1e1e;
+  --main-color: var(--color-blue);
+
+  --header-height: 64px;
+  --footer-height: 48px;
+}

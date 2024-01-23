@@ -1,17 +1,7 @@
 @import url("./reset.css");
+@import url("./variables.css");
 
 :root {
-  --color-highlight: #cf2c4f;
-  --color-pink: #ffb7de;
-  --color-blue: #a2daff;
-  --color-white: #eef9ff;
-  --color-yellow: #ffd8a1;
-  --color-text: #1e1e1e;
-  --main-color: var(--color-blue);
-
-  --header-height: 64px;
-  --footer-height: 48px;
-
   box-sizing: border-box;
 }
 
@@ -45,6 +35,10 @@ body {
 
 header {
   background-color: var(--main-color);
+}
+
+img {
+  width: 100%;
 }
 
 header .wrapper {
@@ -88,6 +82,9 @@ nav {
   justify-content: center;
   align-items: center;
   min-height: var(--footer-height);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer__link {
