@@ -1,5 +1,6 @@
-.products {
+body:has(#content.products) {
   background-color: var(--color-pink);
+  --main-color: var(--color-pink);
 }
 
 main.products {

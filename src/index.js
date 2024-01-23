@@ -1,11 +1,14 @@
 import "./style.css";
 import { createHomePage } from "./pages/home";
 import { createProductsPage } from "./pages/products";
+import { createContactPage } from "./pages/contact";
 
 (function () {
   const root = document.querySelector("#content");
   const home = createHomePage();
   const products = createProductsPage();
+  const contact = createContactPage();
+
   let currentPage = null;
 
   function addNavigationEvents() {
@@ -19,10 +22,27 @@ import { createProductsPage } from "./pages/products";
 
     homePageLink.addEventListener("click", () => {
       displayPage(home, "home");
+
+      productsPageLink.classList.remove("active");
+      contactPageLink.classList.remove("active");
     });
 
     productsPageLink.addEventListener("click", () => {
       displayPage(products, "products");
+      if (!productsPageLink.classList.contains("active")) {
+        productsPageLink.classList.add("active");
+
+        contactPageLink.classList.remove("active");
+      }
+    });
+
+    contactPageLink.addEventListener("click", () => {
+      if (!contactPageLink.classList.contains("active")) {
+        contactPageLink.classList.add("active");
+
+        productsPageLink.classList.remove("active");
+      }
+      displayPage(contact, "contact");
     });
   }
 

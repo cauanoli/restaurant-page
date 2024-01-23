@@ -1,0 +1,32 @@
+body:has(main.contact) {
+  --main-color: var(--color-white);
+}
+
+main.contact {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+  min-height: calc(100svh - (var(--header-height) + var(--footer-height)));
+  background-color: var(--main-color);
+  font-size: 1.125rem;
+}
+
+.contact__information__title {
+  color: var(--color-highlight);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.contact__information__telephone-number {
+  position: relative;
+}
+
+.contact__information__telephone-number::before {
+  font-family: "Material Symbols Outlined";
+  position: absolute;
+  content: "\e0b0";
+  font-size: 2rem;
+  left: -20%;
+  top: -20%;
+}
