@@ -4,22 +4,21 @@ body:has(#content.products) {
 }
 
 main.products {
-  display: grid;
-  justify-content: center;
-}
-
-main.products:last-child {
-  grid-column: span 2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .product {
   display: grid;
   place-items: center;
+  flex: 1 1 400px;
 }
 
 .product__image {
-  aspect-ratio: 2/1;
   object-fit: cover;
+  height: 248px;
   grid-column: 1/-1;
   grid-row: 1;
   background: linear-gradient(
