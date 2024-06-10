@@ -24,12 +24,17 @@ export function renderHome() {
 
 function createHero({ imageSrc, text }) {
     const hero = document.createElement("div");
-    hero.classList = "hero";
+    hero.classList = "hero container";
 
     const heroImage = new Image();
     heroImage.src = imageSrc;
     heroImage.classList = "hero__image";
     hero.appendChild(heroImage);
+
+    const imageOverlay = document.createElement("div");
+    imageOverlay.classList = "overlay";
+
+    hero.appendChild(imageOverlay);
 
     const heroText = document.createElement("h1");
     heroText.innerText = text;
@@ -41,7 +46,7 @@ function createHero({ imageSrc, text }) {
 
 function createSection({ title, text, children }) {
     const section = document.createElement("section");
-    section.classList = "section";
+    section.classList = "section container";
 
     const sectionTitle = document.createElement("h2");
     sectionTitle.innerText = title;
