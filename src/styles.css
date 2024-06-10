@@ -184,3 +184,29 @@ header {
     color: var(--white);
     text-transform: capitalize;
 }
+
+.contact-us,
+.visit-us {
+    padding-top: 6rem;
+}
+
+.contact-us__title,
+.visit-us__title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-us__info {
+    margin: 0 auto;
+    max-width: max-content;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.visit-us__image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}

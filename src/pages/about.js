@@ -11,7 +11,7 @@ export function renderAbout() {
 
 function createContactSection() {
     const contactSection = document.createElement("section");
-    contactSection.classList = "contact-us";
+    contactSection.classList = "contact-us container";
 
     const contactTitle = document.createElement("h2");
     contactTitle.innerText = "Contact Us";
@@ -41,7 +41,7 @@ function createContactSection() {
 
 function createVisitUsSection() {
     const visitUsSection = document.createElement("section");
-    visitUsSection.classList = "visit-us";
+    visitUsSection.classList = "visit-us container";
 
     const visitUsTitle = document.createElement("h2");
     visitUsTitle.classList = "visit-us__title";
