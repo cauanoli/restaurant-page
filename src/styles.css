@@ -145,3 +145,42 @@ header {
     max-width: 80ch;
     margin: 0 auto;
 }
+
+.pizzas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 576px));
+    grid-template-rows: repeat(auto-fill, min(auto, 576px));
+    justify-content: center;
+    gap: 1rem;
+}
+
+.pizzas-grid__item {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.pizzas-grid__item__image {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+}
+
+.pizzas-grid__item__label-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1 / -1;
+    grid-row: 2/3;
+}
+
+.pizzas-grid__item__label {
+    font-size: 1.5rem;
+    color: var(--white);
+    text-transform: capitalize;
+}

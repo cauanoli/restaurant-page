@@ -33,11 +33,6 @@ const pizzaFlavors = [
 export function renderMenu() {
     const content = document.querySelector("#content");
 
-    // clear the previous page
-    [...content.childNodes].forEach((child) => {
-        content.removeChild(child);
-    });
-
     // create pizza's container
     const pizzasGrid = document.createElement("div");
     pizzasGrid.classList = "pizzas-grid";
