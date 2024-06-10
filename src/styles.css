@@ -40,6 +40,10 @@ header {
     color: var(--yellow);
 }
 
+body > footer {
+    margin-top: 10rem;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -99,4 +103,19 @@ header {
 
     padding-left: 64px;
     padding-bottom: 42px;
+}
+
+.section {
+    text-align: center;
+}
+
+.section__title {
+    font-size: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+.section__text {
+    max-width: 80ch;
+    margin: 0 auto;
 }
