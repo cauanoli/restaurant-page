@@ -2,6 +2,7 @@ import "./styles.css";
 
 import { renderHome } from "./pages/home";
 import { renderMenu } from "./pages/menu";
+import { renderAbout } from "./pages/about";
 
 (function () {
     const pages = {
@@ -15,6 +16,7 @@ import { renderMenu } from "./pages/menu";
         },
         about: {
             name: "about",
+            render: renderAbout,
         },
     };
 
