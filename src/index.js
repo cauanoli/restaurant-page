@@ -58,8 +58,16 @@ import { renderMenu } from "./pages/menu";
 
     function updateToPage(page) {
         if (currentPage?.name !== page.name) {
+            clearCurrentPage();
             page.render();
             currentPage = page;
         }
+    }
+
+    function clearCurrentPage() {
+        const content = document.querySelector("#content");
+        [...content.children].forEach((child) => {
+            content.removeChild(child);
+        });
     }
 })();
